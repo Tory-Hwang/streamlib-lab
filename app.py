@@ -3,7 +3,7 @@ import requests
 import streamlit as st
 
 try:
-    API_URL = st.secrets["API_URL"]           # Community Cloud 에 올릴 때는 Secrets 에 API 주소를 넣음
+    API_URL = st.secrets["https://my-ai-api-2.vercel.app"]           # Community Cloud 에 올릴 때는 Secrets 에 API 주소를 넣음
 except Exception:
     API_URL = "http://localhost:8000"         # Colab 에서 점검할 때는 같은 런타임의 API 서버
 
